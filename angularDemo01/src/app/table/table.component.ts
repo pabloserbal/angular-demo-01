@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+// Table interface
+import { Table } from './../interfaces/table';
 
 @Component({
   selector: 'app-table',
@@ -11,5 +13,16 @@ export class TableComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  show : boolean = false;
+
+  seeTable() {
+    this.show = true;
+  }
+
+  hideTable() {
+    this.show = false;
+  }
+  
 
 }
